@@ -1,0 +1,31 @@
+.header{
+    background-color: #E44D3A;
+    height: 56px;
+}
+
+.headerContent{
+    width: 60%;
+    height: inherit;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftLogo{
+    margin-left: 25px;
+}
+
+.logo{
+    width: 50px;
+    transform: rotate(-30deg);
+    margin: 7px 0 0 0;
+}
+.logoText{
+    width: 150px;
+    color: #dbdada;
+    filter: invert(92%) sepia(10%) saturate(6%) hue-rotate(55deg) brightness(93%) contrast(95%);
+    margin-left: 10px;
+    padding-bottom: 20px;
+}

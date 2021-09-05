@@ -1,0 +1,58 @@
+.suggUserWrap img{
+    width: 35px;
+    float: left;
+}
+
+.suggTitle{
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.suggTitle h3{
+    margin: 0;
+    padding: 20px;
+}
+
+.suggUserWrap{
+    padding: 15px 20px;
+}
+
+.suggInfo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.suggInfo h4{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.suggInfo span{
+    color: #686868;
+    font-size: 14px;
+}
+
+.suggInfoWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addSuggButton button{
+    color: #b2b2b2;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+}
+
+.addSuggButton button:hover{
+    color: white;
+    background-color: #E44D3A;
+    transition: all 0.4s ease-in;
+}

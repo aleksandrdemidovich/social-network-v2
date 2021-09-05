@@ -1,0 +1,48 @@
+.settingsWrap{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.settingListMenu{
+    width: 245px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+.settingListMenu a{
+    width: 100%;
+    padding: 18px 0 20px 20px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-right: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: stretch;
+}
+
+.settingListMenu a:hover{
+    border-bottom: 1px solid #E44D3A;
+    color: #E44D3A;
+}
+
+
+
+
+.settingMenu{
+    width: 832px;
+    height: 50vh;
+    padding: 0 15px;
+    background-color: white;
+    border-left: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    box-shadow: 1px 0 4px rgb(194, 194, 194);
+}

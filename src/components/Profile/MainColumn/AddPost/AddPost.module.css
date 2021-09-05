@@ -1,0 +1,54 @@
+.addPost{
+    background-color: #FFFFFF;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.addPostWrap{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+
+}
+
+.userImage{
+    padding: 17px 0 5px 20px;
+
+}
+
+.userImage img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #e44d3a;
+}
+
+.inputPost{
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.inputPost textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    display: inline-block;
+    resize: none;
+
+}
+
+.addPostButton{
+    display: flex;
+    float: right;
+    margin: 0 20px 10px 0;
+    background-color: #51A5FB;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px 16px 8px
+}
+

@@ -1,0 +1,45 @@
+.post{
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.postWrap img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #e44d3a;
+    float: left;
+}
+
+.postWrap{
+    padding: 15px 20px 1px 20px;
+}
+
+.postInfo{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.postInfo h3{
+    margin: 0 0 0 15px;
+}
+
+.addPostTime{
+    margin-left: 15px;
+    color: #b2b2b2;
+    font-size: 14px;
+    vertical-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.postLikes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0 0 5px 0;
+}

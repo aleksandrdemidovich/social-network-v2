@@ -1,0 +1,44 @@
+.rightHeaderAvatar{
+    margin-right: 10px;
+}
+
+.rightHeaderMenu{
+
+    position: relative;
+}
+
+.rightHeaderUserName{
+    color: #dbdada;
+    font-size: 17px;
+}
+
+
+.rightMenuButton{
+    border: 1px;
+    border-style: none solid none solid;
+    border-color:#dd3e2b;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    background-color: inherit;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    
+}
+
+.rightHeaderMenu img{
+    width:24px;
+    height: 24px;
+    border-radius: 12px;
+}
+
+.rightHeaderMenu a{
+    color: #fff;
+    font-size: 14px;
+    padding-left: 10px;
+
+}

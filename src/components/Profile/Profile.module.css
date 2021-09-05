@@ -1,0 +1,27 @@
+.rowWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center ;
+    padding-bottom: 15px;
+}
+
+
+.leftRow{
+    width:262px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.mainRow{
+    width:525px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.rightRow{
+    width:262px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}

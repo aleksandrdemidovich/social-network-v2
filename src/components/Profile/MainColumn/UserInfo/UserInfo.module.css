@@ -1,0 +1,72 @@
+.userInfo{
+    background-color: #FFFFFF;
+    border-top: 4px solid #e44d3a;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.infoWrap{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.editButton{
+    position: relative;
+    display: block;
+    float: right;
+    border: none;
+    outline: none;
+    background-color: white;
+    padding-top: 15px;
+    color: #e44d3a;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.info h3{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.searchJobItem{
+    background-color: #53D690;
+    padding: 0 10px 0 10px;
+    border-radius: 15px;
+    text-decoration: black;
+    font: italic 0.9em "Fira Sans", serif;
+}
+
+.userPosition{
+    color: #686868;
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 5px;
+}
+
+.profSkill{
+    padding-top: 15px ;
+
+}
+.skillsWrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.skillsWrap div{
+    margin: 0 10px 10px 0;
+}
+
+.skill{
+    padding: 4px 10px 4px 10px;
+    display: inline-block;
+    border-radius: 15px;
+    position: relative;
+    background-color: #f1f1f1;
+    color: #b2b2b2;
+}
