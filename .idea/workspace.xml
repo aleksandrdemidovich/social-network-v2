@@ -1,11 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30111d30-8efe-4f6d-80d8-d49e367d0332" name="Changes" comment="" />
+    <list default="true" id="30111d30-8efe-4f6d-80d8-d49e367d0332" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/ReceivedMessage/ReceivedMessage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/ReceivedMessage/ReceivedMessage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/SentMessage/SentMessage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/SentMessage/SentMessage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/UserMessageItem/UserMessageItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/UserMessageItem/UserMessageItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LeftNav/LeftNavigation.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LeftNav/LeftNavigation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/UserCard/UserCard.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/UserCard/UserCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/render.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderNavigation/HeaderNavigation.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderNavigation/HeaderNavigation.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/LeftLogoHeader/LeftLogoHeader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/LeftLogoHeader/LeftLogoHeader.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/RightHeaderMenu/RightHeaderMenu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/RightHeaderMenu/RightHeaderMenu.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/RightHeaderMenu/RightHeaderMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/RightHeaderMenu/RightHeaderMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/LeftColumn/Suggestions/Suggestion/Suggestion.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/LeftColumn/Suggestions/Suggestion/Suggestion.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MainColumn/AddPost/AddPost.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MainColumn/AddPost/AddPost.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MainColumn/AddPost/AddPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MainColumn/AddPost/AddPost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MainColumn/Posts/Post/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MainColumn/Posts/Post/Post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MainColumn/Posts/Posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MainColumn/Posts/Posts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Settings/Settings.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Settings/Settings.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,13 +73,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
     <property name="ts.external.directory.path" value="C:\Users\Alexander Demidovich\It-incubator\social-network\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alexander Demidovich\It-incubator\social-network\src" />
+      <recent name="C:\Users\Alexander Demidovich\It-incubator\social-network\src\components\LeftNav" />
+      <recent name="C:\Users\Alexander Demidovich\It-incubator\social-network\src\components\Users\UserCard" />
+      <recent name="C:\Users\Alexander Demidovich\It-incubator\social-network\src\components\Dialogs\SentMessage" />
+      <recent name="C:\Users\Alexander Demidovich\It-incubator\social-network\src\components\Dialogs\ReceivedMessage" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alexander Demidovich\It-incubator\social-network\src\components\Dialogs\Message" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -45,11 +102,34 @@
       <option name="presentableId" value="Default" />
       <updated>1630795741451</updated>
       <workItem from="1630795745917" duration="947000" />
-      <workItem from="1630840167816" duration="2421000" />
+      <workItem from="1630840167816" duration="2948000" />
+      <workItem from="1630848327135" duration="24000" />
+      <workItem from="1630856111956" duration="1220000" />
+      <workItem from="1630919376752" duration="21023000" />
+      <workItem from="1631033695256" duration="5074000" />
+      <workItem from="1631090903864" duration="13564000" />
+      <workItem from="1631110173142" duration="13115000" />
+      <workItem from="1631178948533" duration="22891000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

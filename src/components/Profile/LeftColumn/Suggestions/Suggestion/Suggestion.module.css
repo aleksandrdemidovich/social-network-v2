@@ -1,6 +1,7 @@
 .suggUserWrap img{
     width: 35px;
     float: left;
+
 }
 
 .suggTitle{
@@ -55,4 +56,10 @@
     color: white;
     background-color: #E44D3A;
     transition: all 0.4s ease-in;
+}
+
+@media (min-width: 770px) and (max-width: 1023px){
+    .suggInfo span{
+        display: none;
+    }
 }

@@ -1,0 +1,45 @@
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    left: 0;
+    margin-top: 28px;
+    background-color: inherit;
+    width: 60px;
+    height: 100%;
+    visibility: inherit;
+    padding-top: 50px;
+    transition: width 0.4s;
+}
+
+.item a {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #E44D3A;
+    align-items: center;
+    padding: 20px;
+    transition: all 0.1s linear;
+}
+
+
+.navWrap{
+
+}
+
+.nav:hover {
+    width: 150px;
+}
+
+.item a:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    content: attr(data-title);
+}
+
+.itemName {
+    margin-left: 5px;
+    overflow: hidden;
+}

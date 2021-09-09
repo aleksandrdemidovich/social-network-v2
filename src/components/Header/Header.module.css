@@ -1,9 +1,9 @@
-.header{
+.header {
     background-color: #E44D3A;
     height: 56px;
 }
 
-.headerContent{
+.headerContent {
     width: 60%;
     height: inherit;
     margin-left: 20%;
@@ -13,19 +13,58 @@
     align-items: center;
 }
 
-.leftLogo{
+.leftLogo {
     margin-left: 25px;
 }
 
-.logo{
+.logo {
     width: 50px;
     transform: rotate(-30deg);
     margin: 7px 0 0 0;
 }
-.logoText{
+
+.logoText {
     width: 150px;
     color: #dbdada;
     filter: invert(92%) sepia(10%) saturate(6%) hue-rotate(55deg) brightness(93%) contrast(95%);
     margin-left: 10px;
     padding-bottom: 20px;
 }
+
+.burgerButton {
+    display: none;
+    color: #dbdada;
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+    .burgerButton {
+        display: flex;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .headerContent {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .headerContent {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .headerContent {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+.leftNav {
+    display: flex;
+}
+

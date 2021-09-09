@@ -1,0 +1,66 @@
+.userMessageWrap{
+    display: flex;
+    flex-direction: row;
+}
+
+.userMessImg img{
+    width: 50px;
+    border-radius: 25px;
+}
+
+.userMessInfo {
+    padding-left: 13px;
+}
+
+.userMessInfo h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.userMessInfo p{
+    color: #686868;
+    font-size: 16px;
+}
+
+.userMessInfo h3, p{
+    margin: 0;
+}
+
+.userMessSendTime{
+    margin-left: auto;
+    align-items: center;
+}
+
+.postedTime{
+    color: #b2b2b2;
+    font-size: 14px;
+}
+
+.messNotif{
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    background-color: #e77667;
+    text-align: center;
+    line-height: 25px;
+    font-size: 13px;
+    color: #fff;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.messageBox{
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    width: 70%;
+    height: 100%;
+}
+
+.liWrap{
+    text-decoration: none;
+}
+
+.liWrap:visited{
+    text-decoration: none;
+    color: black;
+}

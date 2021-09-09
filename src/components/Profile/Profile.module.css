@@ -1,27 +1,119 @@
-.rowWrap{
+.rowWrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: center ;
     padding-bottom: 15px;
 }
 
 
-.leftRow{
-    width:262px;
+.leftRow {
+    width: 262px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-.mainRow{
-    width:525px;
+
+.mainRow {
+    width: 525px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-.rightRow{
-    width:262px;
+
+.rightRow {
+    width: 262px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+.rightRowToBottom {
+    display: none;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .rightRowToBottom {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .rowWrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .leftRow {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .mainRow {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .rightRow {
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .rightRow {
+        display: none;
+    }
+
+    .leftRow {
+        width: 20vw;
+    }
+
+    .mainRow {
+        margin-left: 20px;
+        width: 65vw;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .leftRow {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .mainRow {
+        margin-right: 20px;
+        flex: 2;
+    }
+
+    .rightRow {
+        display: none;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+    .rowWrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .leftRow {
+        margin-right: 20px;
+    }
+
+    .mainRow {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .leftRow {
+        margin-right: 20px;
+    }
+
+    .mainRow {
+        margin-right: 20px;
+    }
 }

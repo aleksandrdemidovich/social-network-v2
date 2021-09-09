@@ -1,6 +1,222 @@
 .dialogsWrap{
-    border: 1px solid blue;
     width: 100%;
     height: 726px ;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-sizing: border-box;
 }
 
+
+.messageBox{
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.messageBoxTitle{
+    padding: 17px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid #e4e4e4;
+
+}
+
+.messageBoxTitleImg img{
+    width: 50px;
+    border-radius: 25px;
+}
+
+.messageBoxTitleInfo h3, p{
+    margin: 0;
+    padding: 0;
+}
+
+.messageBoxTitleInfo h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.messageBoxTitleInfo p{
+    color: #686868;
+    font-size: 16px;
+}
+
+.messagesArea{
+    height: 76%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.messagesArea::-webkit-scrollbar-button{
+
+}
+
+.messagesArea::-webkit-scrollbar {
+    width: 5px;
+}
+
+.messagesArea::-webkit-scrollbar-thumb {
+    background: #E44D3A;
+    border-radius: 5px;
+}
+
+
+.messageBoxTitleInfo{
+    padding-left: 13px;
+}
+
+.footerInputArea{
+    background-color: #f3f5f7;
+    padding: 25px 20px 15px 20px;
+    border: 1px solid #eeeeee;
+}
+
+.inputMess{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inputMess button{
+    background-color: #e44d3a;
+    height: 45px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+    width: 17%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.inputMess input{
+    width: 75%;
+    background-color: #fff;
+    color: black;
+    font-size: 16px;
+    padding: 0 15px;
+    border: 1px solid #e6e6e6;
+    height: 45px;
+}
+
+
+
+
+
+/*User message list*/
+.dialogsWrap{
+    width: 100%;
+    height: 726px ;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+
+}
+
+.messagesList{
+    width: 30%;
+    height: 100%;
+    border-left: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+
+}
+
+.messagesListTitle{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.messagesListTitle h3{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.titleIconWrap{
+    color: #b2b2b2;
+    cursor: pointer;
+}
+
+
+.usersList ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.usersList li{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eeeeee;
+    cursor: pointer;
+}
+
+.userMessageWrap{
+    display: flex;
+    flex-direction: row;
+}
+
+.userMessImg img{
+    width: 50px;
+    border-radius: 25px;
+}
+
+.userMessInfo {
+    padding-left: 13px;
+}
+
+.userMessInfo h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.userMessInfo p{
+    color: #686868;
+    font-size: 16px;
+}
+
+.userMessInfo h3, p{
+    margin: 0;
+}
+
+.userMessSendTime{
+    margin-left: auto;
+    align-items: center;
+}
+
+.postedTime{
+    color: #b2b2b2;
+    font-size: 14px;
+}
+
+.messNotif{
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    background-color: #e77667;
+    text-align: center;
+    line-height: 25px;
+    font-size: 13px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.messageBox{
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    width: 70%;
+    height: 100%;
+}

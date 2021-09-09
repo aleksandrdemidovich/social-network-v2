@@ -30,3 +30,18 @@
     margin-left: 10px;
     padding-bottom: 20px;
 }
+
+@media screen and (max-width: 1200px) {
+    .logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .logo{
+        display: none;
+    }
+    .logoText{
+        padding-top: 15px;
+    }
+}

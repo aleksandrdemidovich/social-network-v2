@@ -2,9 +2,10 @@ import React from 'react';
 import s from './Post.module.css'
 import AccessTimeOutlined from '@material-ui/icons/AccessTimeOutlined';
 import {Favorite} from "@material-ui/icons";
+import {PostType} from "../../../../../state/state";
 
 
-function Post() {
+function Post(props: PostType) {
 
     function checkOneDigitNumbers(i: any) {
         if (i < 10) {
@@ -42,12 +43,9 @@ function Post() {
                     <div className={s.addPostTime}><AccessTimeOutlined style={{width: '14px', paddingRight:'3px'}}/>{currentTime()}</div>
                 </div>
                 <div className={s.postMessage}>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Accusamus aliquam architecto culpa deleniti dicta dolor doloribus ducimus eius explicabo id
-                        illo,
-                        laudantium maxime nulla quae quos ratione reiciendis, rem sequi? </p>
+                    <p>{props.message} </p>
                 </div>
-                <div className={s.postLikes}>15<Favorite style={{width: '18px', color: 'red'}}/></div>
+                <div className={s.postLikes}>{props.likeCount}<Favorite style={{width: '18px', color: 'red'}}/></div>
             </div>
         </div>
     );
