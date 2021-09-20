@@ -43,3 +43,7 @@
     margin: 0;
     padding: 0 0 5px 0;
 }
+
+.likeItem svg{
+    fill: red;
+}

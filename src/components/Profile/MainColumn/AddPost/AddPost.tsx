@@ -2,23 +2,25 @@ import React, {useState} from 'react';
 import s from './AddPost.module.css'
 
 type addPostPropsType = {
-    addPostCallback: (postMess: string) => void
+    addPostCallback: () => void
+    newPostText: string
+    updateNewPostText:(newText: string) => void
 }
 
 function AddPost(props: addPostPropsType) {
 
 
-    const addPost = (mess: string) => {
-        props.addPostCallback(mess)
-        setInputValue('')
+    const addPost = () => {
+        props.addPostCallback()
     }
-    const [inputValue, setInputValue] = useState('')
 
     const handleKeyDown = (e: any) =>{
         e.target.style.height = 'inherit';
         e.target.style.height = `${e.target.scrollHeight}px`;
     }
 
+
+    const onPostChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {props.updateNewPostText(e.currentTarget.value)}
 
     return (
         <div className={s.addPost} >
@@ -28,10 +30,13 @@ function AddPost(props: addPostPropsType) {
                          alt="avatar"/>
                 </div>
                 <div className={s.inputPost}>
-                    <textarea value={inputValue} onChange={ (e) => {setInputValue(e.currentTarget.value)}} placeholder="What's new?" onKeyDown={handleKeyDown} />
+                    <textarea value={props.newPostText}
+                              onChange={ onPostChange }
+                              placeholder="What's new?"
+                              onKeyDown={handleKeyDown} />
                 </div>
             </div>
-            <button onClick={ () => { addPost(inputValue)} } className={s.addPostButton}>Post</button>
+            <button onClick={ () => { addPost()} } className={s.addPostButton}>Post</button>
         </div>
     );
 }

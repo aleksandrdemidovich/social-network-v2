@@ -10,7 +10,9 @@ import AddPost from "./MainColumn/AddPost/AddPost";
 import {ProfilePageType} from "../../state/state";
 
 type addPostPropsType = {
-    addPostCallback: (postMess: string) => void
+    addPostCallback: () => void
+    newPostText: string
+    updateNewPostText:(newText: string) => void
 }
 
 
@@ -25,7 +27,10 @@ function App(props:ProfilePageType & addPostPropsType) {
             </div>
             <div className={s.mainRow}>
                 <UserInfo/>
-                <AddPost addPostCallback={props.addPostCallback}/>
+                <AddPost addPostCallback={props.addPostCallback}
+                         newPostText={props.newPostText}
+                         updateNewPostText={props.updateNewPostText}
+                />
                 <Posts posts={props.posts} />
                 <div className={s.rightRowToBottom}>
                     <Weather/>

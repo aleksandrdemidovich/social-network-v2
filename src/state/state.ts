@@ -1,5 +1,9 @@
 import {v1} from "uuid";
-import {rerenderEntireTree} from "../render";
+
+let rerenderEntireTree = () => {
+    console.log('state changed')
+}
+
 
 export type MessageType = {
     id: string
@@ -17,6 +21,7 @@ export type PostType = {
 
 export type ProfilePageType = {
     posts: Array<PostType>
+    newPostText?: string
 }
 
 export type DialogPageType = {
@@ -32,6 +37,7 @@ export type RootStateType = {
 
 let state: RootStateType = {
     profilePage: {
+
         posts: [
             {id: v1(), message: 'Hi, how are you ', likeCount: 15},
             {id: v1(), message: 'It\'s my first post ', likeCount: 20},
@@ -41,7 +47,8 @@ let state: RootStateType = {
                 likeCount: 5
             },
             {id: v1(), message: 'Da da ', likeCount: 99},
-        ]
+        ],
+        newPostText: ''
     },
     dialogPage: {
         dialogs: [
@@ -64,14 +71,24 @@ let state: RootStateType = {
 }
 
 
-export const addPost = (postMess: string) => {
+export const addPost = () => {
     let newPost = {
         id: v1(),
-        message: postMess,
+        message: state.profilePage.newPostText!,
         likeCount: 0
     }
     state.profilePage.posts.unshift(newPost)
-    rerenderEntireTree(state)
+    state.profilePage.newPostText = ''
+    rerenderEntireTree()
+}
+
+export const updateNewPostText = (newText: string) => {
+    state.profilePage.newPostText = newText
+    rerenderEntireTree()
+}
+
+export const subscribe = (callback: () => void) => {
+    rerenderEntireTree = callback;
 }
 
 

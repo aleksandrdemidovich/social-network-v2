@@ -6,7 +6,7 @@
 .headerContent {
     width: 60%;
     height: inherit;
-    margin-left: 20%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

@@ -13,7 +13,9 @@ import state, {RootStateType} from "./state/state";
 
 type AppProps = {
     state: RootStateType
-    addPostCallback: (postMess: string) => void
+    addPostCallback: () => void
+    updateNewPostText:(newText: string) => void
+
 }
 
 
@@ -30,7 +32,8 @@ function App(props: AppProps) {
                         <Route path='/profile' render={() => <Profile
                             posts={state.profilePage.posts}
                             addPostCallback={props.addPostCallback}
-
+                            newPostText={state.profilePage.newPostText!}
+                            updateNewPostText={props.updateNewPostText}
                         />}/>
                         <Route path='/dialogs' render={() => <Dialogs
                             dialogs={state.dialogPage.dialogs}
