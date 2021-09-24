@@ -1,4 +1,6 @@
 import {v1} from "uuid";
+import {profileReducer} from "./profile-reducer";
+import {dialogsReducer} from "./dialogs-reducer";
 
 const ADD_POST = "ADD-POST";
 const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
@@ -133,31 +135,9 @@ const store : StoreType = {
         return this._state
     },
     dispatch(action){
-        if(action.type === ADD_POST){
-            let newPost = {
-                id: v1(),
-                message: action.newPostText!,
-                likeCount: 0
-            }
-            this._state.profilePage.posts.unshift(newPost)
-            this._state.profilePage.newPostText = ''
-            this.rerenderEntireTree()
-        } else if (action.type === UPDATE_NEW_POST_TEXT){
-            this._state.profilePage.newPostText = action.newText
-            this.rerenderEntireTree()
-        } else if (action.type === SEND_MESSAGE){
-            let newMess = {
-                id: v1(),
-                message: action.newMessText,
-            }
-            this._state.dialogPage.messages.push(newMess)
-            this._state.dialogPage.newMessText = ''
-            this.rerenderEntireTree()
-        }
-        else if (action.type === UPDATE_NEW_MESSAGE_TEXT){
-            this._state.dialogPage.newMessText = action.newText
-            this.rerenderEntireTree()
-        }
+        this._state.profilePage = profileReducer(this._state.profilePage, action)
+        this._state.dialogPage = dialogsReducer(this._state.dialogPage, action)
+        this.rerenderEntireTree()
     }
 }
 

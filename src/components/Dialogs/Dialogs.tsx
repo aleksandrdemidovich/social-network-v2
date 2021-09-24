@@ -5,10 +5,8 @@ import ReceivedMessage from "./Message/ReceivedMessage/ReceivedMessage";
 import SentMessage from "./Message/SentMessage/SentMessage";
 import {
     ActionsType,
-    addPostActionCreator,
     DialogPageType, sendMessageActionCreator,
     UpdateNewMessTextCreator,
-    UpdateNewPostTextCreator
 } from "../../state/state";
 import SettingsIcon from "@material-ui/icons/Settings";
 import UserMessageItem from "./UserMessageItem/UserMessageItem";
