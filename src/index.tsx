@@ -1,28 +1,24 @@
 import React from 'react';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import state, {RootStateType, subscribe} from "./state/state";
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {addPost, updateNewPostText} from "./state/state";
+import store, {StoreType} from "./state/state";
 
 
-let rerenderEntireTree = (state: RootStateType) => {
+let rerenderEntireTree = (store: StoreType) => {
     ReactDOM.render(
         <React.StrictMode>
-            <App state={state}
-                 addPostCallback={addPost}
-                 updateNewPostText = {updateNewPostText}
-            />
+            <App store={store}/>
         </React.StrictMode>,
         document.getElementById('root')
     );
 }
 
- rerenderEntireTree(state)
+ rerenderEntireTree(store)
 
-subscribe(() => rerenderEntireTree(state));
+store.subscribe(() => rerenderEntireTree(store));
 
 
 

@@ -15,8 +15,16 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-
 }
+
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .messageBox {
+        width: 100%;
+    }
+}
+
 
 .messageBoxTitle{
     padding: 17px 20px;
@@ -24,7 +32,7 @@
     flex-direction: row;
     justify-content: flex-start;
     border-bottom: 1px solid #e4e4e4;
-
+    align-items: center;
 }
 
 .messageBoxTitleImg img{
@@ -49,8 +57,9 @@
 
 .messagesArea{
     height: 76%;
-    overflow: scroll;
+    /*overflow: scroll;*/
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .messagesArea::-webkit-scrollbar-button{
@@ -125,7 +134,24 @@
     border-left: 1px solid #e4e4e4;
     border-bottom: 1px solid #e4e4e4;
     border-right: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    overflow: auto;
+}
 
+.messagesList::-webkit-scrollbar {
+    width: 5px;
+}
+
+.messagesList::-webkit-scrollbar-thumb {
+    background: #E44D3A;
+    border-radius: 5px;
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .messagesList {
+        width: 100%;
+    }
 }
 
 .messagesListTitle{
@@ -214,9 +240,4 @@
     margin-top: 5px;
 }
 
-.messageBox{
-    border-right: 1px solid #e4e4e4;
-    border-bottom: 1px solid #e4e4e4;
-    width: 70%;
-    height: 100%;
-}
+

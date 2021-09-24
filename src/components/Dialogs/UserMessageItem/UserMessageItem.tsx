@@ -23,12 +23,25 @@ export function currentTime() {
 }
 
 
-function UserMessageItem(props: DialogType) {
+/*type UserMessageItem = {
+    activateEditMode: () => void
+    activateViewMode: () => void
+}*/
+function UserMessageItem(props: DialogType /*& UserMessageItem*/) {
+
+/*    const setEditModeToMessage = () => {
+        props.activateEditMode()
+    }
+
+    const activateViewMode = () => {
+        props.activateViewMode()
+        path = '/dialogs'
+    }*/
 
     let path = '/dialogs/' + props.id
 
     return (
-        <li className={s.liWrap}>
+        <li className={s.liWrap} /*onClick={setEditModeToMessage}*/>
             <NavLink to={path} className={s.liWrap}>
                 <div className={s.userMessageWrap}>
                     <div className={s.userMessImg}>

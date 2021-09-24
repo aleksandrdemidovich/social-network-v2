@@ -9,17 +9,17 @@ import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
-import state, {RootStateType} from "./state/state";
+import {StoreType} from "./state/state";
 
 type AppProps = {
-    state: RootStateType
-    addPostCallback: () => void
-    updateNewPostText:(newText: string) => void
-
+    store: StoreType
 }
 
 
 function App(props: AppProps) {
+
+    const state = props.store.getState()
+
     return (
         <BrowserRouter>
             <div className="App">
@@ -31,11 +31,11 @@ function App(props: AppProps) {
                         </Route>
                         <Route path='/profile' render={() => <Profile
                             posts={state.profilePage.posts}
-                            addPostCallback={props.addPostCallback}
                             newPostText={state.profilePage.newPostText!}
-                            updateNewPostText={props.updateNewPostText}
-                        />}/>
+                            dispatch={props.store.dispatch.bind(props.store)}/>}/>
                         <Route path='/dialogs' render={() => <Dialogs
+                            newMessText={state.dialogPage.newMessText}
+                                dispatch={props.store.dispatch.bind(props.store)}
                             dialogs={state.dialogPage.dialogs}
                             messages={state.dialogPage.messages}/>}/>
                         <Route path='/users' render={() => <Users/>}/>

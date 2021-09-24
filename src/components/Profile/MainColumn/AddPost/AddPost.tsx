@@ -1,17 +1,22 @@
 import React, {useState} from 'react';
 import s from './AddPost.module.css'
+import {ActionsType, addPostActionCreator, UpdateNewPostTextCreator} from "../../../../state/state";
 
 type addPostPropsType = {
-    addPostCallback: () => void
     newPostText: string
-    updateNewPostText:(newText: string) => void
+    dispatch: (action:ActionsType) => void
 }
+
+
 
 function AddPost(props: addPostPropsType) {
 
-
     const addPost = () => {
-        props.addPostCallback()
+        props.dispatch(addPostActionCreator(props.newPostText))
+    }
+
+    const onPostChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+        props.dispatch(UpdateNewPostTextCreator(e.currentTarget.value))
     }
 
     const handleKeyDown = (e: any) =>{
@@ -19,8 +24,6 @@ function AddPost(props: addPostPropsType) {
         e.target.style.height = `${e.target.scrollHeight}px`;
     }
 
-
-    const onPostChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {props.updateNewPostText(e.currentTarget.value)}
 
     return (
         <div className={s.addPost} >

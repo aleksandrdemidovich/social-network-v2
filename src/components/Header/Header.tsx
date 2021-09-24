@@ -9,6 +9,7 @@ import LeftNavigation from "../LeftNav/LeftNavigation";
 function Header() {
 
     const [open, setOpen] = useState<boolean>(false)
+
     const checkToggle = (t: boolean) => {
         return t ? setOpen(false) : setOpen(true)
     }

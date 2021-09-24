@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30111d30-8efe-4f6d-80d8-d49e367d0332" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/UserMessageItem/UserMessageItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/UserMessageItem/UserMessageItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MainColumn/AddPost/AddPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MainColumn/AddPost/AddPost.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MainColumn/Posts/Post/Post.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MainColumn/Posts/Post/Post.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/render.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -87,6 +88,13 @@
       <workItem from="1631384853290" duration="4121000" />
       <workItem from="1631448226888" duration="610000" />
       <workItem from="1632056713012" duration="8835000" />
+      <workItem from="1632145050062" duration="2622000" />
+      <workItem from="1632157923549" duration="4387000" />
+      <workItem from="1632227921369" duration="6255000" />
+      <workItem from="1632395903717" duration="11560000" />
+      <workItem from="1632413040059" duration="24000" />
+      <workItem from="1632483272678" duration="5930000" />
+      <workItem from="1632490161390" duration="4147000" />
     </task>
     <servers />
   </component>

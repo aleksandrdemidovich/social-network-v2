@@ -7,12 +7,11 @@ import Posts from "./MainColumn/Posts/Posts";
 import ProfileInfo from "./LeftColumn/ProfileInfo/ProfileInfo";
 import Portfolio from "./RightColumn/TopPosts/Portfolio";
 import AddPost from "./MainColumn/AddPost/AddPost";
-import {ProfilePageType} from "../../state/state";
+import {ActionsType, ProfilePageType,} from "../../state/state";
 
 type addPostPropsType = {
-    addPostCallback: () => void
     newPostText: string
-    updateNewPostText:(newText: string) => void
+    dispatch: (action:ActionsType) => void
 }
 
 
@@ -27,9 +26,8 @@ function App(props:ProfilePageType & addPostPropsType) {
             </div>
             <div className={s.mainRow}>
                 <UserInfo/>
-                <AddPost addPostCallback={props.addPostCallback}
+                <AddPost dispatch={props.dispatch.bind(props.posts)}
                          newPostText={props.newPostText}
-                         updateNewPostText={props.updateNewPostText}
                 />
                 <Posts posts={props.posts} />
                 <div className={s.rightRowToBottom}>
