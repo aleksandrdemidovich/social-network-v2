@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30111d30-8efe-4f6d-80d8-d49e367d0332" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Message/SentMessage/SentMessage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/SentMessage/SentMessage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/UserMessageItem/UserMessageItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/UserMessageItem/UserMessageItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MainColumn/AddPost/AddPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MainColumn/AddPost/AddPost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MainColumn/Posts/Post/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MainColumn/Posts/Post/Post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MainColumn/Posts/Posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MainColumn/Posts/Posts.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/dialogs-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/dialogs-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/profile-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/profile-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +56,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
-    <property name="ts.external.directory.path" value="C:\Users\Alexander Demidovich\It-incubator\social-network\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\Admin\It-incubator\social-network-v2\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">

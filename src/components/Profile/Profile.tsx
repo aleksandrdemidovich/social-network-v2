@@ -6,16 +6,15 @@ import UserInfo from "./MainColumn/UserInfo/UserInfo";
 import Posts from "./MainColumn/Posts/Posts";
 import ProfileInfo from "./LeftColumn/ProfileInfo/ProfileInfo";
 import Portfolio from "./RightColumn/TopPosts/Portfolio";
-import AddPost from "./MainColumn/AddPost/AddPost";
-import {ActionsType, ProfilePageType,} from "../../state/state";
+import {PostType, ProfilePageType, StoreType,} from "../../redux/store";
+import AddPostContainer from "./MainColumn/AddPost/AddPostContainer";
 
 type addPostPropsType = {
-    newPostText: string
-    dispatch: (action:ActionsType) => void
+    // store: StoreType
 }
 
 
-function App(props:ProfilePageType & addPostPropsType) {
+function App(props:addPostPropsType) {
 
 
     return (
@@ -26,10 +25,8 @@ function App(props:ProfilePageType & addPostPropsType) {
             </div>
             <div className={s.mainRow}>
                 <UserInfo/>
-                <AddPost dispatch={props.dispatch.bind(props.posts)}
-                         newPostText={props.newPostText}
-                />
-                <Posts posts={props.posts} />
+                <AddPostContainer /*store={props.store}*//>
+                <Posts /*posts={props.store.getState().profilePage.posts*/ />
                 <div className={s.rightRowToBottom}>
                     <Weather/>
                     <Portfolio/>

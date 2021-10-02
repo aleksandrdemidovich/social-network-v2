@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Post.module.css'
 import AccessTimeOutlined from '@material-ui/icons/AccessTimeOutlined';
 import {Favorite} from "@material-ui/icons";
-import {PostType} from "../../../../../state/state";
+import {PostType} from "../../../../../redux/store";
 
 
 function Post(props: PostType) {

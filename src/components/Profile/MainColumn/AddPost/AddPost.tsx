@@ -1,22 +1,23 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './AddPost.module.css'
-import {ActionsType, addPostActionCreator, UpdateNewPostTextCreator} from "../../../../state/state";
 
 type addPostPropsType = {
     newPostText: string
-    dispatch: (action:ActionsType) => void
+    // dispatch: (action:ActionsType) => void
+    updateNewPostText: (e: string) => void
+    addPost: () => void
 }
-
 
 
 function AddPost(props: addPostPropsType) {
 
     const addPost = () => {
-        props.dispatch(addPostActionCreator(props.newPostText))
+        props.addPost()
     }
 
     const onPostChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-        props.dispatch(UpdateNewPostTextCreator(e.currentTarget.value))
+        let text = e.currentTarget.value
+        props.updateNewPostText(text)
     }
 
     const handleKeyDown = (e: any) =>{
