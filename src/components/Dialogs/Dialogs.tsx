@@ -1,34 +1,18 @@
-import React, {SyntheticEvent, useEffect, useRef, useState} from 'react';
+import React, {useEffect, useRef} from 'react';
 import s from './Dialogs.module.css';
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import ReceivedMessage from "./Message/ReceivedMessage/ReceivedMessage";
 import SentMessage from "./Message/SentMessage/SentMessage";
-import {
-    ActionsType,
-    DialogPageType, StoreType,
-} from "../../redux/store";
 import SettingsIcon from "@material-ui/icons/Settings";
 import UserMessageItem from "./UserMessageItem/UserMessageItem";
 import ArrowBackOutlinedIcon from '@material-ui/icons/ArrowBackOutlined';
-import {sendMessageActionCreator, UpdateNewMessTextCreator} from "../../redux/dialogs-reducer";
+import {DialogsPropsType} from "./DialogsContainer";
 
 
-type PropsType = {
-    dialogsPage: DialogPageType
-    sendMessage: () => void
-    onChangeMess:(text: string) => void
-}
+
+function Dialogs(props: DialogsPropsType) {
 
 
-function Dialogs(props: PropsType) {
-
-    /*    const [editMode, setEditMode] = useState(false)
-        const activateEditMode = () => {
-            setEditMode(true);
-        }
-        const activateViewMode = () => {
-            setEditMode(false);
-        }*/
     const messageEl = useRef<HTMLDivElement>(null);
     useEffect(() => {
         if (messageEl) {
@@ -46,7 +30,7 @@ function Dialogs(props: PropsType) {
     }, [])
 
     const sendMessage = () => {
-        props.sendMessage()
+        props.sendMessage(props.dialogsPage.newMessText)
     }
 
     const onMessChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -56,7 +40,7 @@ function Dialogs(props: PropsType) {
 
     const onKeyPressHandler = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.charCode === 13) {
-            props.sendMessage()
+            props.sendMessage(props.dialogsPage.newMessText)
         }
     }
 
@@ -86,7 +70,7 @@ function Dialogs(props: PropsType) {
                 </div>
             </div>}
             {/*------END------*/}
-            {{/*editMode*/} ? <div className={s.messageBox}>
+             <div className={s.messageBox}>
                 <div className={s.messageBoxTitle}>
                     <ArrowBackOutlinedIcon /*onClick={activateViewMode}*/
                         style={{marginRight: '45px', color: '#E44D3A'}}/>
@@ -113,7 +97,7 @@ function Dialogs(props: PropsType) {
                         <button onClick={sendMessage}>Send</button>
                     </div>
                 </div>
-            </div> : <></>}
+            </div>
         </div>
     );
 }

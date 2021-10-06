@@ -8,15 +8,10 @@ import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import {Redirect, Route, Switch} from "react-router-dom";
-import {StoreType} from "./redux/store";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 
-type AppProps = {
-    // store: StoreType
-}
 
-
-function App(props: AppProps) {
+function App() {
 
     return (
             <div className="App">

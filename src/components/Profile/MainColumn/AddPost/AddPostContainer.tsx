@@ -1,46 +1,42 @@
 import React from 'react';
-import {ActionsType, StoreType,} from "../../../../redux/store";
 import {addPostActionCreator, UpdateNewPostTextCreator} from "../../../../redux/profile-reducer";
 import AddPost from "./AddPost";
-import StoreContext from "../../../../StoreContext";
+import {connect} from "react-redux";
+import {AppStateType} from "../../../../redux/redux-store";
+import {Dispatch} from "redux";
+import {ProfilePageType} from "../../../../redux/store";
 
-type addPostPropsType = {
-    // store: StoreType
+
+type mapStateToPropsType = {
+    profilePage: ProfilePageType
+    newPostText: string
+}
+type mapDispatchPropsType = {
+    onPostChange: (text: string) => void
+    addPost: (newMessText: string) => void
 }
 
+export type  AddPostPropsType = mapStateToPropsType & mapDispatchPropsType
 
-function AddPostContainer(props: addPostPropsType) {
-
-    // const state = props.store.getState()
-
-    // const addPost = () => {
-    //     props.store.dispatch(addPostActionCreator(state.profilePage.newPostText!))
-    // }
-    //
-    // const onPostChange = (text: string) => {
-    //     props.store.dispatch(UpdateNewPostTextCreator(text))
-    // }
-
-    return (
-        <StoreContext.Consumer>
-            { (store) => {
-
-                const state = store.getState()
-                const addPost = () => {
-                    store.dispatch(addPostActionCreator(state.profilePage.newPostText!))
-                }
-
-                const onPostChange = (text: string) => {
-                    store.dispatch(UpdateNewPostTextCreator(text))
-                }
-                return <AddPost
-                    newPostText={state.profilePage.newPostText!}
-                    updateNewPostText={onPostChange}
-                    addPost={addPost}
-                />
-            }}
-        </StoreContext.Consumer>
-    );
+const mapStateToProps = (state: AppStateType): mapStateToPropsType => {
+    return {
+        profilePage: state.profilePage,
+        newPostText: state.profilePage.newPostText!
+    }
 }
+const mapDispatchToProps = (dispatch: Dispatch): mapDispatchPropsType => {
+    return {
+        onPostChange: (text: string) => {
+
+            dispatch(UpdateNewPostTextCreator(text))
+        },
+        addPost: (newMessText: string) => {
+            dispatch(addPostActionCreator(newMessText))
+        }
+
+    }
+}
+
+const AddPostContainer = connect(mapStateToProps, mapDispatchToProps)(AddPost)
 
 export default AddPostContainer;

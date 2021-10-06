@@ -1,10 +1,22 @@
-import {ActionsType, DialogPageType} from "./store";
+import {ActionsType} from "./store";
 import {v1} from "uuid";
 
 const SEND_MESSAGE = "SEND-MESSAGE"
 const UPDATE_NEW_MESSAGE_TEXT = "UPDATE_NEW_MESSAGE_TEXT"
 
-const initialState: DialogPageType = {
+export type MessageType = {
+    id: string
+    message: string
+}
+export type DialogType = {
+    id: string
+    name: string
+}
+
+
+export type InitialStateType = typeof initialState
+
+const initialState = {
     dialogs: [
         {id: v1(), name: 'Alex'},
         {id: v1(), name: 'John'},
@@ -15,7 +27,7 @@ const initialState: DialogPageType = {
         {id: v1(), name: 'Larisa Dolina3'},
         {id: v1(), name: 'Larisa Dolina4'},
         {id: v1(), name: 'Larisa Dolina5'},
-    ],
+    ] as Array<DialogType>,
     messages: [
         {id: v1(), message: 'hi'},
         {id: v1(), message: 'how is your it-kamasutra'},
@@ -25,23 +37,22 @@ const initialState: DialogPageType = {
             id: v1(),
             message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illum, molestias quibusdam rem repellat sapiente? Amet consequatur corporis cum, et ipsam magni, nemo obcaecati quos saepe, sed sint tempora totam!'
         },
-    ],
+    ] as Array<MessageType>,
     newMessText: ''
 }
 
-export const dialogsReducer = (state: DialogPageType = initialState, action: ActionsType) => {
+export const dialogsReducer = (state: InitialStateType = initialState, action: ActionsType) : InitialStateType => {
     switch (action.type) {
-        case "SEND-MESSAGE":
+        case "SEND-MESSAGE": {
             let newMess = {
                 id: v1(),
                 message: action.newMessText,
             }
-            state.messages.push(newMess)
-            state.newMessText = ''
-            break
-        case "UPDATE_NEW_MESSAGE_TEXT":
-            state.newMessText = action.newMessText
-            break
+            return {...state, messages:[...state.messages, newMess], newMessText:''}
+        }
+        case "UPDATE_NEW_MESSAGE_TEXT": {
+            return  {...state, newMessText:action.newMessText}
+        }
         default :
             return state
     }

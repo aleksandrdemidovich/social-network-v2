@@ -3,18 +3,15 @@ import s from './Profile.module.css';
 import Suggestions from "./LeftColumn/Suggestions/Suggestions";
 import Weather from "./RightColumn/Weather/Weather";
 import UserInfo from "./MainColumn/UserInfo/UserInfo";
-import Posts from "./MainColumn/Posts/Posts";
 import ProfileInfo from "./LeftColumn/ProfileInfo/ProfileInfo";
 import Portfolio from "./RightColumn/TopPosts/Portfolio";
-import {PostType, ProfilePageType, StoreType,} from "../../redux/store";
 import AddPostContainer from "./MainColumn/AddPost/AddPostContainer";
-
-type addPostPropsType = {
-    // store: StoreType
-}
+import PostsContainer from "./MainColumn/Posts/PostsContainer";
 
 
-function App(props:addPostPropsType) {
+
+
+function App() {
 
 
     return (
@@ -26,7 +23,7 @@ function App(props:addPostPropsType) {
             <div className={s.mainRow}>
                 <UserInfo/>
                 <AddPostContainer /*store={props.store}*//>
-                <Posts /*posts={props.store.getState().profilePage.posts*/ />
+                <PostsContainer /*posts={props.store.getState().profilePage.posts*/ />
                 <div className={s.rightRowToBottom}>
                     <Weather/>
                     <Portfolio/>
