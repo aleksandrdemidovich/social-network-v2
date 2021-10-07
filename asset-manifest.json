@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/social-network-v2/static/css/main.d710e762.chunk.css",
-    "main.js": "/social-network-v2/static/js/main.cf3321ea.chunk.js",
-    "main.js.map": "/social-network-v2/static/js/main.cf3321ea.chunk.js.map",
-    "runtime-main.js": "/social-network-v2/static/js/runtime-main.af8eede9.js",
-    "runtime-main.js.map": "/social-network-v2/static/js/runtime-main.af8eede9.js.map",
-    "static/js/2.b763b2ce.chunk.js": "/social-network-v2/static/js/2.b763b2ce.chunk.js",
-    "static/js/2.b763b2ce.chunk.js.map": "/social-network-v2/static/js/2.b763b2ce.chunk.js.map",
-    "static/js/3.74befa84.chunk.js": "/social-network-v2/static/js/3.74befa84.chunk.js",
-    "static/js/3.74befa84.chunk.js.map": "/social-network-v2/static/js/3.74befa84.chunk.js.map",
+    "main.css": "/social-network-v2/static/css/main.cdcc8ff5.chunk.css",
+    "main.js": "/social-network-v2/static/js/main.82e015d8.chunk.js",
+    "main.js.map": "/social-network-v2/static/js/main.82e015d8.chunk.js.map",
+    "runtime-main.js": "/social-network-v2/static/js/runtime-main.1f1e660d.js",
+    "runtime-main.js.map": "/social-network-v2/static/js/runtime-main.1f1e660d.js.map",
+    "static/js/2.fd7fbd6b.chunk.js": "/social-network-v2/static/js/2.fd7fbd6b.chunk.js",
+    "static/js/2.fd7fbd6b.chunk.js.map": "/social-network-v2/static/js/2.fd7fbd6b.chunk.js.map",
+    "static/js/3.8e0199a5.chunk.js": "/social-network-v2/static/js/3.8e0199a5.chunk.js",
+    "static/js/3.8e0199a5.chunk.js.map": "/social-network-v2/static/js/3.8e0199a5.chunk.js.map",
     "index.html": "/social-network-v2/index.html",
-    "static/css/main.d710e762.chunk.css.map": "/social-network-v2/static/css/main.d710e762.chunk.css.map",
-    "static/js/2.b763b2ce.chunk.js.LICENSE.txt": "/social-network-v2/static/js/2.b763b2ce.chunk.js.LICENSE.txt",
+    "static/css/main.cdcc8ff5.chunk.css.map": "/social-network-v2/static/css/main.cdcc8ff5.chunk.css.map",
+    "static/js/2.fd7fbd6b.chunk.js.LICENSE.txt": "/social-network-v2/static/js/2.fd7fbd6b.chunk.js.LICENSE.txt",
     "static/media/moto-logo.e9354abf.svg": "/social-network-v2/static/media/moto-logo.e9354abf.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.af8eede9.js",
-    "static/js/2.b763b2ce.chunk.js",
-    "static/css/main.d710e762.chunk.css",
-    "static/js/main.cf3321ea.chunk.js"
+    "static/js/runtime-main.1f1e660d.js",
+    "static/js/2.fd7fbd6b.chunk.js",
+    "static/css/main.cdcc8ff5.chunk.css",
+    "static/js/main.82e015d8.chunk.js"
   ]
 }
