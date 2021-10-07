@@ -2,11 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30111d30-8efe-4f6d-80d8-d49e367d0332" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/MainColumn/AddPost/AddPostContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/MainColumn/Posts/PostsContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/dialogs-reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/profile-reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/redux-store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Message/SentMessage/SentMessage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/SentMessage/SentMessage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/UserMessageItem/UserMessageItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/UserMessageItem/UserMessageItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MainColumn/AddPost/AddPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MainColumn/AddPost/AddPost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MainColumn/Posts/Post/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MainColumn/Posts/Post/Post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MainColumn/Posts/Posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MainColumn/Posts/Posts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UserCard/UserCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UserCard/UserCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/dialogs-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/dialogs-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/profile-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/profile-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +62,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Users" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -54,11 +72,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alexander Demidovich\It-incubator\social-network\src\components\Users" />
+      <recent name="C:\Users\Alexander Demidovich\It-incubator\social-network\src\redux" />
       <recent name="C:\Users\Alexander Demidovich\It-incubator\social-network\src" />
       <recent name="C:\Users\Alexander Demidovich\It-incubator\social-network\src\components\LeftNav" />
       <recent name="C:\Users\Alexander Demidovich\It-incubator\social-network\src\components\Users\UserCard" />
-      <recent name="C:\Users\Alexander Demidovich\It-incubator\social-network\src\components\Dialogs\SentMessage" />
-      <recent name="C:\Users\Alexander Demidovich\It-incubator\social-network\src\components\Dialogs\ReceivedMessage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Alexander Demidovich\It-incubator\social-network\src\components\Dialogs\Message" />
@@ -94,6 +112,7 @@
       <workItem from="1632483272678" duration="5930000" />
       <workItem from="1632490161390" duration="5094000" />
       <workItem from="1632496881025" duration="4187000" />
+      <workItem from="1633603985510" duration="11947000" />
     </task>
     <servers />
   </component>

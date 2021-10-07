@@ -3,19 +3,15 @@ import s from './Profile.module.css';
 import Suggestions from "./LeftColumn/Suggestions/Suggestions";
 import Weather from "./RightColumn/Weather/Weather";
 import UserInfo from "./MainColumn/UserInfo/UserInfo";
-import Posts from "./MainColumn/Posts/Posts";
 import ProfileInfo from "./LeftColumn/ProfileInfo/ProfileInfo";
 import Portfolio from "./RightColumn/TopPosts/Portfolio";
-import AddPost from "./MainColumn/AddPost/AddPost";
-import {ActionsType, ProfilePageType,} from "../../state/state";
-
-type addPostPropsType = {
-    newPostText: string
-    dispatch: (action:ActionsType) => void
-}
+import AddPostContainer from "./MainColumn/AddPost/AddPostContainer";
+import PostsContainer from "./MainColumn/Posts/PostsContainer";
 
 
-function App(props:ProfilePageType & addPostPropsType) {
+
+
+function App() {
 
 
     return (
@@ -26,10 +22,8 @@ function App(props:ProfilePageType & addPostPropsType) {
             </div>
             <div className={s.mainRow}>
                 <UserInfo/>
-                <AddPost dispatch={props.dispatch.bind(props.posts)}
-                         newPostText={props.newPostText}
-                />
-                <Posts posts={props.posts} />
+                <AddPostContainer /*store={props.store}*//>
+                <PostsContainer /*posts={props.store.getState().profilePage.posts*/ />
                 <div className={s.rightRowToBottom}>
                     <Weather/>
                     <Portfolio/>

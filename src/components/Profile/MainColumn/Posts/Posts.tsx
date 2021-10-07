@@ -1,12 +1,12 @@
 import React from 'react';
 import s from './Posts.module.css'
 import Post from "./Post/Post";
-import {ProfilePageType} from "../../../../state/state";
+import {PostsPropsType} from "./PostsContainer";
 
 
-function Posts(props: ProfilePageType) {
+function Posts(props: PostsPropsType) {
 
-    let postsElement = props.posts.map(p => <Post key={p.id} id={p.id} message={p.message} likeCount={p.likeCount}/> )
+    const postsElement = props.posts.map(p => <Post key={p.id} id={p.id} message={p.message} likeCount={p.likeCount}/> )
 
     return (
         <div className={s.posts}>
@@ -15,4 +15,11 @@ function Posts(props: ProfilePageType) {
     );
 }
 
-export default Posts;
+export default Posts
+
+
+
+
+
+
+

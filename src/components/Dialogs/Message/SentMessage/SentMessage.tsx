@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './SentMessage.module.css';
 import {currentTime} from "../../UserMessageItem/UserMessageItem";
-import {MessageType} from "../../../../state/state";
+import {MessageType} from "../../../../redux/store";
 
 
 function SentMessage(props:MessageType) {

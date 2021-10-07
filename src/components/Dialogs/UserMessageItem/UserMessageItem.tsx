@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './UserMessageItem.module.css';
 import {NavLink} from 'react-router-dom';
-import {DialogType} from "../../../state/state";
+import {DialogType} from "../../../redux/store";
 
 function checkOneDigitNumbers(i: any) {
     if (i < 10) {

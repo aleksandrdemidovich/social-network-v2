@@ -67,3 +67,65 @@
     padding: 20px 0 20px 0;
     box-sizing: border-box;
 }
+
+
+
+
+
+/*------------------USER-CARD-----------------------*/
+.userCard{
+    width: 247px;
+    height: 314px;
+    margin-bottom: 30px;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userCard img{
+    width: 90px;
+    border-radius: 60px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.userName{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.userInfo{
+    color: #686868;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.followButton{
+    margin-top: 20px;
+    background-color: #53d690;
+    border-radius: 3px;
+    padding: 0 12px;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.unfollowButton{
+    margin-top: 20px;
+    background-color: #E44D3A;
+    border-radius: 3px;
+    padding: 0 12px;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+    cursor: pointer;
+}

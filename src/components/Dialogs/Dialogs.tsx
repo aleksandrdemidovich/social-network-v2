@@ -1,32 +1,18 @@
-import React, {SyntheticEvent, useEffect, useRef, useState} from 'react';
+import React, {useEffect, useRef} from 'react';
 import s from './Dialogs.module.css';
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import ReceivedMessage from "./Message/ReceivedMessage/ReceivedMessage";
 import SentMessage from "./Message/SentMessage/SentMessage";
-import {
-    ActionsType,
-    DialogPageType, sendMessageActionCreator,
-    UpdateNewMessTextCreator,
-} from "../../state/state";
 import SettingsIcon from "@material-ui/icons/Settings";
 import UserMessageItem from "./UserMessageItem/UserMessageItem";
 import ArrowBackOutlinedIcon from '@material-ui/icons/ArrowBackOutlined';
+import {DialogsPropsType} from "./DialogsContainer";
 
 
-type PropsType = {
-    dispatch: (action: ActionsType) => void
-}
+
+function Dialogs(props: DialogsPropsType) {
 
 
-function Dialogs(props: DialogPageType & PropsType) {
-
-    /*    const [editMode, setEditMode] = useState(false)
-        const activateEditMode = () => {
-            setEditMode(true);
-        }
-        const activateViewMode = () => {
-            setEditMode(false);
-        }*/
     const messageEl = useRef<HTMLDivElement>(null);
     useEffect(() => {
         if (messageEl) {
@@ -44,27 +30,27 @@ function Dialogs(props: DialogPageType & PropsType) {
     }, [])
 
     const sendMessage = () => {
-        props.dispatch(sendMessageActionCreator(props.newMessText))
+        props.sendMessage(props.dialogsPage.newMessText)
     }
 
     const onMessChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        props.dispatch(UpdateNewMessTextCreator(e.currentTarget.value))
+        props.onChangeMess(e.currentTarget.value)
     }
 
 
     const onKeyPressHandler = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.charCode === 13) {
-            props.dispatch(sendMessageActionCreator(props.newMessText))
-
+            props.sendMessage(props.dialogsPage.newMessText)
         }
     }
 
 
-    let dialogsElements = props.dialogs
+    let dialogsElements = props.dialogsPage.dialogs
         .map(d => <UserMessageItem /*activateEditMode={activateEditMode} activateViewMode={activateViewMode}*/
             key={d.id} name={d.name} id={d.id}/>);
-    let messagesElements = props.messages
+    let messagesElements = props.dialogsPage.messages
         .map(m => <SentMessage key={m.id} message={m.message} id={m.id}/>)
+
 
     return (
         <div className={s.dialogsWrap}>
@@ -84,7 +70,7 @@ function Dialogs(props: DialogPageType & PropsType) {
                 </div>
             </div>}
             {/*------END------*/}
-            {{/*editMode*/} ? <div className={s.messageBox}>
+             <div className={s.messageBox}>
                 <div className={s.messageBoxTitle}>
                     <ArrowBackOutlinedIcon /*onClick={activateViewMode}*/
                         style={{marginRight: '45px', color: '#E44D3A'}}/>
@@ -92,7 +78,7 @@ function Dialogs(props: DialogPageType & PropsType) {
                         <img src="https://avatarfiles.alphacoders.com/169/169302.jpg" alt="userAvatar"/>
                     </div>
                     <div className={s.messageBoxTitleInfo}>
-                        <h3>{props.dialogs[0].name}</h3>
+                        <h3>{props.dialogsPage.dialogs[0].name}</h3>
                         <p>Online</p>
                     </div>
                     <MoreVertIcon
@@ -106,12 +92,12 @@ function Dialogs(props: DialogPageType & PropsType) {
                 </div>
                 <div className={s.footerInputArea}>
                     <div className={s.inputMess}>
-                        <input value={props.newMessText} onKeyPress={onKeyPressHandler} onChange={onMessChange}
+                        <input value={props.dialogsPage.newMessText} onKeyPress={onKeyPressHandler} onChange={onMessChange}
                                type="text" placeholder='Type a message here'/>
                         <button onClick={sendMessage}>Send</button>
                     </div>
                 </div>
-            </div> : <></>}
+            </div>
         </div>
     );
 }

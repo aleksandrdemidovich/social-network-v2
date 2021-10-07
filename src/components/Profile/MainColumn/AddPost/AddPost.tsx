@@ -1,29 +1,23 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './AddPost.module.css'
-import {ActionsType, addPostActionCreator, UpdateNewPostTextCreator} from "../../../../state/state";
-
-type addPostPropsType = {
-    newPostText: string
-    dispatch: (action:ActionsType) => void
-}
+import {AddPostPropsType} from "./AddPostContainer";
 
 
-
-function AddPost(props: addPostPropsType) {
+function AddPost(props: AddPostPropsType) {
 
     const addPost = () => {
-        props.dispatch(addPostActionCreator(props.newPostText))
+        props.addPost(props.newPostText!)
     }
 
     const onPostChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-        props.dispatch(UpdateNewPostTextCreator(e.currentTarget.value))
+        let text = e.currentTarget.value
+        props.onPostChange(text)
     }
 
     const handleKeyDown = (e: any) =>{
         e.target.style.height = 'inherit';
         e.target.style.height = `${e.target.scrollHeight}px`;
     }
-
 
     return (
         <div className={s.addPost} >

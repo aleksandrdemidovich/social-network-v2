@@ -1,27 +1,20 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './UserCard.module.css';
+import {UserType} from "../../../redux/users-reducer";
 
 
-function UserCard() {
 
-    const [unfollow, setFollow] = useState<boolean>(false)
-
-    const checkFollow = (f: boolean) => {
-        f ? setFollow(false) : setFollow(true)
-    }
-    const setButtonName = (status: boolean) => {
-      return   status ? 'Unfollow' : 'Follow'
-    }
-
+function UserCard(props: UserType) {
 
     return (
         <div className={s.userCard}>
-            <img src="https://pbs.twimg.com/profile_images/1049056561962917888/RAnSm7gM.jpg" alt="avatar"/>
-            <div className={s.userName}>User Name</div>
-            <div className={s.userInfo}>user status</div>
-            <div className={s.userCountry}>user.location.country</div>
-            <div className={s.userCity}>user.location.city</div>
-            <button onClick={() => {checkFollow(unfollow)}} className={ unfollow ? s.unfollowButton : s.followButton }>{setButtonName(unfollow)}</button>
+            <img src={props.photoURl} alt="avatar"/>
+            <div className={s.userName}>{props.fullName}</div>
+            <div className={s.userInfo}>{props.status}</div>
+            <div className={s.userCountry}>{props.location.country}</div>
+            <div className={s.userCity}>{props.location.city}</div>
+            {props.followed ? <button onClick={() => {}} >Unfollow</button> : <button onClick={() => {}}>Follow</button>}
+            <button onClick={() => {}} className={ props.followed ? s.unfollowButton : s.followButton }>{props.followed ? 'Unfollow' : 'Follow'}</button>
         </div>
     );
 }
